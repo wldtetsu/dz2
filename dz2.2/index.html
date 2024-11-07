@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Расчет количества литров топлива</h2>
+    <label>Сумма в сомах: <input type="number" id="amount" /></label><br>
+    <label>Тип топлива:
+        <select id="fuelType">
+            <option value="40">АИ-92 (40 сом/л)</option>
+            <option value="45">АИ-95 (45 сом/л)</option>
+            <option value="50">АИ-98 (50 сом/л)</option>
+            <option value="35">ДТ (35 сом/л)</option>
+        </select>
+    </label><br>
+    <button onclick="calculateLiters()">Рассчитать</button>
+    <p id="result"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
